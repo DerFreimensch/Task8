@@ -13,20 +13,35 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Task7">
+      <UniqueIdentifier>{f3995dc2-3112-4179-bd4c-94d018736b40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Task8">
+      <UniqueIdentifier>{5af3ed43-9465-4099-8084-98f7ead98307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Task9">
+      <UniqueIdentifier>{dbefea32-4f8d-466b-bce8-54363fa45c0d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Code.c">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="zad7.c">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Task7</Filter>
+    </ClCompile>
+    <ClCompile Include="Code.c">
+      <Filter>Исходные файлы\Task8</Filter>
+    </ClCompile>
+    <ClCompile Include="Task9.cpp">
+      <Filter>Исходные файлы\Task9</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="print.txt">
-      <Filter>Исходные файлы</Filter>
-    </Text>
     <Text Include="print1.txt">
+      <Filter>Исходные файлы\Task7</Filter>
+    </Text>
+    <Text Include="print8.txt">
+      <Filter>Исходные файлы\Task8</Filter>
+    </Text>
+    <Text Include="print9.txt">
       <Filter>Исходные файлы</Filter>
     </Text>
   </ItemGroup>

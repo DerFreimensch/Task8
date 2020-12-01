@@ -1,23 +1,23 @@
-/*#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #define MAXLEN 1000
 
-char c, line[MAXLEN], * simbol, * first;
+char c, line[MAXLEN], * simbol, * first, sss;
 char lines[200][MAXLEN];
 int dlina_slova[300];
 int  number_str = 0, slovo = 0, i = 0, kol_slov = 0, max_kol_slov = 0;
 FILE* file;
 
 void Obnulenie() {
-for (int i = 0; i < 300; i++)
-	dlina_slova[i] = 0;
-for (int i = 0; i < 200; i++)
-	strcpy_s(lines[i], _countof(lines[i]), " ");
+	for (int i = 0; i < 300; i++)
+		dlina_slova[i] = 0;
+	for (int i = 0; i < 200; i++)
+		strcpy_s(lines[i], _countof(lines[i]), " ");
 }
-void ZapolnenieInformazii(){
+void ZapolnenieInformazii() {
 	while (!feof(file))
-		{	
+	{
 		if (fgets(line, MAXLEN, file) == NULL)
 			break;
 		else
@@ -32,7 +32,7 @@ void ZapolnenieInformazii(){
 			do
 			{
 				c = *simbol;
-				if (*simbol == ' ' || *simbol == '.' || *simbol == ',' || *simbol == '\n' || *simbol == '\0')
+				if (*simbol == sss || *simbol == '\0' || *simbol == '\n')
 				{
 					if (slovo)
 					{
@@ -71,7 +71,7 @@ void IspolzovanieInformazii() {
 		do
 		{
 			c = *simbol;
-			if (*simbol == ' ' || *simbol == '.' || *simbol == ',' || *simbol == '\n' || *simbol == '\0')
+			if (*simbol == sss || *simbol == '\0' || *simbol == '\n')
 			{
 				if (slovo)
 				{
@@ -96,20 +96,21 @@ void IspolzovanieInformazii() {
 			}
 			simbol++;
 
-			if (c == '\0' || c == '\n'){
+			if (c == '\0' || c == '\n') {
 				printf("\n");
 				break;
-				
+
 			}
 		} while (1);
 	}
 }
 
-	void main()
+void main(int argc, char* argv[])
 {
-	fopen_s(&file, "print.txt", "r");
+	sss = *argv[2];
+	fopen_s(&file, argv[1], "r");
 	Obnulenie();
 	ZapolnenieInformazii();
 	IspolzovanieInformazii();
 	fclose(file);
-}*/
+}

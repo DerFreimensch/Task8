@@ -141,11 +141,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Code.c" />
+    <ClCompile Include="Task9.cpp" />
     <ClCompile Include="zad7.c" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="print.txt" />
+    <Text Include="print8.txt" />
     <Text Include="print1.txt" />
+    <Text Include="print9.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
