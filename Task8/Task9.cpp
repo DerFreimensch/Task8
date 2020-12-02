@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #define MAXLEN 1000
@@ -113,4 +113,4 @@ void main(int argc, char* argv[])
 	ZapolnenieInformazii();
 	IspolzovanieInformazii();
 	fclose(file);
-}
+}*/
